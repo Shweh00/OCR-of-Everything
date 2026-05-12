@@ -1,4 +1,4 @@
-import { ClipboardImage, Crosshair, ImagePlus, Settings } from "lucide-react";
+import { Clipboard, Crosshair, ImagePlus, Settings } from "lucide-react";
 import { IconButton } from "./IconButton";
 import { PrivacyStatusChip } from "./PrivacyStatusChip";
 
@@ -27,7 +27,7 @@ export function QuickPanel({ onClipboard, onRegion, onDemo, busy }: QuickPanelPr
           <kbd>Ctrl Shift X</kbd>
         </button>
         <button className="quick-action" type="button" onClick={onClipboard} disabled={busy}>
-          <ClipboardImage size={20} />
+          <Clipboard size={20} />
           <span>识别剪贴板</span>
           <kbd>Ctrl Shift O</kbd>
         </button>
